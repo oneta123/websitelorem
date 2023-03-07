@@ -1,12 +1,15 @@
 /* Import */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 
 /* Global */
+
 * {
-  box-sizing: border-box;
+  box-sizing: :border-box;
   padding: 0;
   margin: 0;
+
   font-family: 'Roboto', sans-serif;
 }
 
@@ -23,6 +26,7 @@
   background-position: center;
   background-size: cover;
   height: 90vh;
+  overflow: hidden;
 
 }
 
@@ -91,13 +95,15 @@
   align-items: center;
   height: 70vh;
   text-align: center;
+  padding-top: 110px;
+
 }
 
 .text h1 {
-  font-size: 4em;
+  font-size: 3em;
   color: white;
   font-weight: 900;
-  padding: 20px 0;
+  padding: 5px 0;
 }
 
 .text p {
@@ -108,9 +114,9 @@
 
 /* section about-us */
 /* .about-us {
-  display: grid;
-  grid-template-columns: 50px, 40px;
-  width: 100vw;
+display: grid;
+grid-template-columns: 50px, 40px;
+width: 100vw;
 
 
 } */
@@ -118,35 +124,37 @@
 
 /* about */
 /* .about {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
-  text-align: center;
-  grid-column: 1/2;
-  width: 50vw;
-  padding-bottom: 350px;
+display: grid;
+justify-content: center;
+align-items: center;
+height: 90vh;
+text-align: center;
+grid-column: 1/2;
+width: 50vw;
+padding-bottom: 350px;
 }
 
 /* aboout-us-image */
 /* .about-us-img {
-  grid-column: 2/3;
-  width: 50vw;
-  padding: 10;
+grid-column: 2/3;
+width: 50vw;
+padding: 10;
 
-  padding: 0 50px;
+padding: 0 50px;
 
 }
 
 img {
-  max-width: 100%;
-  max-height: 100%;
+max-width: 100%;
+max-height: 100%;
 } */
 
 
 /* about-us */
 .about-us {
   display: flex;
+  padding-top: 50px;
+  margin-bottom: -50px;
 }
 
 /* about-us-text */
@@ -154,6 +162,8 @@ img {
   padding: 8vh 10vw;
   display: block;
   text-align: center;
+
+  overflow: hidden;
 }
 
 .about-us img {
@@ -162,11 +172,13 @@ img {
   height: 60%;
   object-fit: cover;
   min-width: 300px;
+  overflow: hidden;
 }
 
 @media screen and (max-width:768px) {
   .about-us {
     display: block;
+    margin-bottom: 0;
   }
 
   .about-us-text {
@@ -175,17 +187,11 @@ img {
 
   .about-us img {
     width: 100vw;
-    padding: 40px 0;
+    padding: 50px 0;
   }
 }
 
-
-
-
-
-
 /* CSS for banner button */
-
 /* CSS */
 .button-34 {
   background: #5E5DF0;
@@ -208,3 +214,60 @@ img {
   word-break: break-word;
   border: 0;
 }
+
+/* our services */
+.our-services {
+  text-align: center;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  grid-auto-rows: 200px;
+  justify-content: center;
+  margin: 0 100px;
+  padding: 50px 0;
+}
+
+.services>div h3 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+
+.services>div {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: grid;
+  padding: 30px;
+}
+
+
+
+/* our works */
+.work {
+  display: flex;
+  justify-content: center;
+  height: 77px;
+
+}
+
+.img1 {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+
+  gap: 40px;
+  /* margin: 30px; */
+  margin-bottom: 30px;
+}
+
+.img2 {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  gap: 40px;
+}
+
+*/ */
