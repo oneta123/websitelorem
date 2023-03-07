@@ -9,13 +9,16 @@
   box-sizing: :border-box;
   padding: 0;
   margin: 0;
-
   font-family: 'Roboto', sans-serif;
 }
 
 .container {
   padding: 0;
   margin: 0;
+}
+
+h1 h2 h3 {
+  color: #ff0000;
 }
 
 
@@ -25,7 +28,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 90vh;
+  height: 800px;
   overflow: hidden;
 
 }
@@ -38,6 +41,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
+  margin: 0 50px;
 }
 
 /* logo */
@@ -113,56 +117,60 @@
 }
 
 /* section about-us */
-/* .about-us {
-display: grid;
-grid-template-columns: 50px, 40px;
-width: 100vw;
+.about-us {
+  display: grid;
+  grid-template-columns: 50px, 40px;
+  width: 100vw;
 
 
-} */
+}
 
 
 /* about */
-/* .about {
-display: grid;
-justify-content: center;
-align-items: center;
-height: 90vh;
-text-align: center;
-grid-column: 1/2;
-width: 50vw;
-padding-bottom: 350px;
+.about-us {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  height: 500px;
+
+  justify-content: center;
+  margin: 0 50px;
+  overflow: hidden;
+
+}
+
+
+.about-us-text>div {
+  display: grid;
+
 }
 
 /* aboout-us-image */
-/* .about-us-img {
-grid-column: 2/3;
-width: 50vw;
-padding: 10;
-
-padding: 0 50px;
-
+.about-us img {
+  height: 400px;
+  width: auto;
 }
 
-img {
-max-width: 100%;
-max-height: 100%;
-} */
 
 
 /* about-us */
-.about-us {
+/* .about-us {
   display: flex;
   padding-top: 50px;
-  margin-bottom: -50px;
+  margin: 0 -50px 50px 50px;
+  color: #333;
+}
+
+.about-us h1 {
+  color: #2a2a2a;
+  padding: 20px 0;
 }
 
 /* about-us-text */
-.about-us-text {
-  padding: 8vh 10vw;
+/* .about-us-text {}
+
+.about-us>div {
   display: block;
   text-align: center;
-
   overflow: hidden;
 }
 
@@ -189,7 +197,7 @@ max-height: 100%;
     width: 100vw;
     padding: 50px 0;
   }
-}
+} */
 
 /* CSS for banner button */
 /* CSS */
@@ -224,26 +232,46 @@ max-height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
-  grid-auto-rows: 200px;
+  grid-auto-rows: minmax(400px);
   justify-content: center;
   margin: 0 100px;
   padding: 50px 0;
+
+
 }
 
-.services>div h3 {
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 1.5em;
+.services>div:hover {
+  scale: 1.1;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 
-.services>div {
+
+.services>div>div>a {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   display: block;
-  padding: 30px;
+  padding: 70px 30px;
 }
 
-.services>div>p {
+/* grid icons */
+
+.services>div>div>a>i {
+  margin-bottom: 20px;
+}
+
+/* grid texts */
+
+
+.services>div>div>a h3 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.4em;
+  padding-bottom: 10px;
+}
+
+
+.services>div>div>a>p {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 5;
@@ -252,6 +280,10 @@ max-height: 100%;
   -webkit-box-orient: vertical;
 }
 
+.services>div>div>a {
+  color: black;
+  text-decoration: none;
+}
 
 
 /* our works */
