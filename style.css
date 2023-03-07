@@ -239,8 +239,17 @@ max-height: 100%;
 
 .services>div {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  display: grid;
+  display: block;
   padding: 30px;
+}
+
+.services>div>p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  /* number of lines to show */
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 
 
